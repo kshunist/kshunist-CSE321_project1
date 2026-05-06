@@ -111,7 +111,7 @@ The project also includes an additional experiment that analyzes how insertion o
 ## 3.1 Move to the project directory
 
 ```bash
-cd CSE321_Assignment1
+cd CSE321_project1
 ```
 
 ---
@@ -361,7 +361,7 @@ Measured:
 Purpose:
 
 - Compare underflow handling
-- Analyze merge and redistribution behavior
+- Analyze split and redistribution behavior
 
 ---
 
@@ -407,13 +407,6 @@ Purpose:
 - Analyze the impact of input order
 - Compare structural stability
 - Observe how sequential insertion changes node distribution
-
-Generated Figures:
-
-```text
-10. insertion_order_split.png
-11. insertion_order_utilization.png
-```
 
 ---
 
@@ -474,10 +467,6 @@ Possible future improvements include:
 
 - Fully optimized B* Tree deletion
 - Better redistribution strategies
-- Disk-based page simulation
-- Buffer manager simulation
-- Concurrent operations
 - Visualization of tree structures
-- Larger-scale benchmarking
 
 ---

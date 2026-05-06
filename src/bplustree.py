@@ -30,7 +30,7 @@ class BPlusTree:
         return node
     
     def insert(self, key, rid):
-        if self.search(key) is not None: # check key is unique
+        if self.search(key) is not None:
             return
         root = self.root
 

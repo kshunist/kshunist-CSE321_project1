@@ -198,7 +198,7 @@ def main():
     plot_bstar_specific(df)
 
     additional_df = load_additional_results()
-    plot_insertion_order_metric(
+    plot_insertion_order_metric( # insertion order에 따른 split_count 비교
         additional_df,
         metric="split_count",
         ylabel="Split Count",
@@ -206,7 +206,7 @@ def main():
         filename="10. additional_insertion_order_split_count_d10.png"
     )
 
-    plot_insertion_order_metric(
+    plot_insertion_order_metric( # insertion order에 따른 utilization 비교
         additional_df,
         metric="utilization",
         ylabel="Utilization",
