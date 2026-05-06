@@ -131,7 +131,7 @@ The directory name may vary depending on the repository name or the method used 
 Example:
 
 ```bash
-cd CSE321_Project1
+cd CSE321_project1
 ```
 
 ---
