@@ -108,79 +108,132 @@ The project also includes an additional experiment that analyzes how insertion o
 
 # 3. How To Run
 
-## 3.1 Move to the project directory
+## 3.1 Clone the Repository
+
+Clone the repository from GitHub:
 
 ```bash
-cd CSE321_project1
+git clone <repository-url>
+```
+
+Example:
+
+```bash
+git clone https://github.com/username/CSE321_Project1.git
+```
+---
+
+## 3.2 Move to the Project Directory
+
+The directory name may vary depending on the repository name or the method used to download the project
+(e.g., `git clone` or ZIP download).
+
+Example:
+
+```bash
+cd CSE321_Project1
 ```
 
 ---
 
-## 3.2 Run the experiment
+## 3.3 Install Required Packages (Optional)
+
+The following packages are only required for generating plots and figures.
+
+Install required Python packages before running `plot_results.py`:
+
+```bash
+python3 -m pip install pandas matplotlib
+```
+
+---
+
+## 3.4 Check Project Structure
+
+Make sure the following folders exist:
+
+```text
+data/
+results/
+figures/
+src/
+```
+
+Also verify that the dataset exists:
+
+```text
+data/students.csv
+```
+
+---
+
+## 3.5 Run the Experiment
+
+Run the main experiment script:
 
 ```bash
 python3 src/main.py
 ```
+or
+```bash
+python src/main.py
+```
+
+This performs:
+
+- insertion experiment
+- point search experiment
+- range query experiment
+- deletion experiment
+- additional insertion-order experiment
 
 ---
 
-## 3.3 Experiment Output
+## 3.6 Experiment Output
 
 After running `main.py`, the experimental results are saved to:
 
-```bash
+```text
 results/results.csv
 ```
 
 Additional experiment results are saved to:
 
-```bash
+```text
 results/insertion_order_results.csv
 ```
 
 ---
 
-## 3.4 Generating Figures
+## 3.7 Generate Figures
 
-To generate figures from the result CSV files, run:
+To generate plots from the CSV result files, run:
 
 ```bash
 python3 src/plot_results.py
 ```
 
-After running `plot_results.py`, generated figures are saved to:
+Generated figures are saved to:
 
-```bash
+```text
 figures/
 ```
 
 ---
 
-## 3.5 Requirements
+## 3.8 Python Environment
 
-Make sure:
-
-- dataset exists in `data/`
-- results folder exists
-- figures folder exists
-
-Environment:
+I used in this project:
 
 ```text
-My Python Version : 3.14.3
+Python 3.14.3
 ```
 
-Required Python packages:
+Required packages:
 
 ```text
 pandas
 matplotlib
-```
-
-Install packages:
-
-```bash
-python3 -m pip install pandas matplotlib
 ```
 
 ---
